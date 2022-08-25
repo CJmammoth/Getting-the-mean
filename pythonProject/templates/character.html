@@ -1,0 +1,9 @@
+    {% extends "layout.html"%}
+    {% block content %}
+    {% for characters in characters %}
+    <h1>Name: {{ characters.Name }}</h1>
+    <p>Power: {{ characters.Power }}</p>
+    <p>Weapon: {{ characters.Weapon }}</p>
+    <p>Description: {{ characters.Description }}</p>
+{% endfor %}
+{% endblock content %}
